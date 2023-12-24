@@ -22,7 +22,7 @@ function Summaryorder(props) {
     });
     console.log(data)
     await axios.post(
-      "http://localhost:5000/api/v1/order",
+      "https://laundry-cart-backend-api.vercel.app/order",
       {
         orderDetails: data,
         address: "Hyderabad",

@@ -23,7 +23,7 @@ function Register(){
     }
     const submitHandler = async (event)=>{
         event.preventDefault(event);
-    const res= await axios.post("http://localhost:5000/api/v1/register",user)
+    const res= await axios.post("https://laundry-cart-backend-api.vercel.app/register",user)
     console.log(res) 
     console.log(res.status)
     console.log(user)

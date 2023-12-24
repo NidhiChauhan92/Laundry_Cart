@@ -10,7 +10,7 @@ function Orderheader() {
   useEffect(async () => {
     console.log("orderheader", getToken());
     await axios
-      .get("http://localhost:5000/api/v1/order/get", {
+      .get("https://laundry-cart-backend-api.vercel.app/order/get", {
         headers: { Authorization: "test " + getToken() },
       })
       .then((response) => {
