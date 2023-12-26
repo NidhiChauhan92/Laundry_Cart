@@ -13,9 +13,10 @@ const app = express();
 
 app.use(cors(
   {
-      origin: ["https://laundry-cart-frontend-lime.vercel.app"],
-      methods: ["POST", "GET", "PUT", "DELETE"],
-      credentials: true
+    origin: '*',
+    methods: '*',
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
   }
 ));
 
