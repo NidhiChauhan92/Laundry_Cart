@@ -22,7 +22,7 @@ app.use(cors(
 
 
 app.use(bodyparser.json());
-app.use(cors())
+
 
 app.use("/api/v1/order", (req, res, next) => {
     const { authorization } = req.headers;
