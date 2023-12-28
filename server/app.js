@@ -12,7 +12,7 @@ mongoose.connect('mongodb+srv://nidhi_chauhan:mWTLp1sOR1BoyicQ@cluster0.qjfhybk.
 const app = express();
 app.use(express.json());
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin","https://laundry-cart-frontend-nine.vercel.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
