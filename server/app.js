@@ -4,7 +4,7 @@ const loginRoutes = require("./routes/login");
 const orderRoutes = require("./routes/order");
 const SECRET = "restapi";
 const bodyparser = require("body-parser");
-const cors = require('cors')
+// const cors = require('cors')
 var jwt = require('jsonwebtoken');
 const User = require("./models/register");
 
@@ -21,7 +21,7 @@ app.use((req,res,next)=>{
 })
 
 
-app.use(cors());
+// app.use(cors());
   // {
   //   origin: '*',
   //   methods: '*',
