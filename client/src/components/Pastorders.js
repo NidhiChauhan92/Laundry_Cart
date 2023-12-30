@@ -18,7 +18,7 @@ function Pastorders() {
   
   const currToken = getToken()
   useEffect(() =>{
-    axios.get(`https://laundry-cart-backend-api.vercel.app/order`,{
+    axios.get(`https://laundry-cart-backend-api.vercel.app/api/v1/order`,{
       headers:{
         Authorization: 'test '+ currToken
       }

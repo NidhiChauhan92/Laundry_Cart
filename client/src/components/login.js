@@ -23,7 +23,7 @@ function Login (){
     }
     const submitHandler = async(event)=>{
         event.preventDefault();
-      const res= await axios.post("https://laundry-cart-backend-api.vercel.app/login",user)
+      const res= await axios.post("https://laundry-cart-backend-api.vercel.app/api/v1/login",user)
       if (res.status===200){
           setToken(res.data.token)
         //   navigate("/pastorders")

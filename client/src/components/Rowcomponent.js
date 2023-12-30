@@ -26,7 +26,7 @@ function Rowcomponent(props) {
   const currToken = getToken()
   const showSummaryHandler = () => {
     axios
-      .get(`https://laundry-cart-backend-api.vercel.app/order/${props._id}`, {
+      .get(`https://laundry-cart-backend-api.vercel.app/api/v1/order/${props._id}`, {
         headers: {
           Authorization: "test " + currToken,
         },
@@ -51,7 +51,7 @@ function Rowcomponent(props) {
 
   const updateStatus = async () => {
     console.log(props._id)
-    await axios.put(`https://laundry-cart-backend-api.vercel.app/order/${props._id}`, {}, {    
+    await axios.put(`https://laundry-cart-backend-api.vercel.app/api/v1/order/${props._id}`, {}, {    
         headers: {
           Authorization: "test " + currToken,
         },
